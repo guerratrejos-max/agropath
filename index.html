@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroPath</title>
+
+<!-- ENLACE AL CSS EXTERNO -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>AgroPath</header>
+
+<!--  NUEVA SECCIÓN DE IMAGEN DE LOGO / PORTADA -->
+<section id="logo-section">
+  <img src="img/logo.png" alt="Logo AgroPath">
+</section>
+ 
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#productor">Productor</a>
+  <a href="#consumidor">Consumidor</a>
+  <a href="#sobre">Sobre Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Conectando Productores con Consumidores</h2>
+  <p>AgroPath es una plataforma diseñada para brindar visibilidad y conexión directa entre pequeños productores agropecuarios y consumidores, impulsando la economía local y la competencia sana en el sector agrícola.</p>
+  <button class="btn">Explorar</button>
+</section>
+
+<section id="productor">
+  <h2>Zona de Productores</h2>
+  <!-- 🔥 NUEVO ESPACIO PARA IMAGEN -->
+  <div class="section-image">
+      <img src="img/productor.jpeg" alt="Imagen del productor">
+  </div>
+  <p>Registra tus productos, establece tu ubicación y llega a más clientes interesados en tus cosechas.</p>
+  <button class="btn">Ingresar como Productor</button>
+<!-- 🔥 SLIDER DE PRODUCTORES -->
+  <div class="slider-container">
+    <h3>Opciones del Productor</h3>
+    
+  
+
+    <div class="slider">
+      <div class="slide">
+        <h4>Subir Productos</h4>
+        <p>Agrega imágenes de tus cosechas.</p>
+        <input type="file" accept="image/*">
+      </div>
+
+      <div class="slide">
+        <h4>Gestionar Precios</h4>
+        <p>Actualiza precios y disponibilidad.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Ubicación</h4>
+        <p>Coloca tu finca en el mapa.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Inventario</h4>
+        <p>Lleva control de tus productos.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Historial de Ventas</h4>
+        <p>Ve cómo crece tu producción.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="consumidor">
+  <h2>Zona de Consumidores</h2>
+  <!-- 🔥 NUEVO ESPACIO PARA IMAGEN -->
+  <div class="section-image">
+      <img src="img/consumidor.jpg" alt="Imagen del productor">
+  </div>
+  <p>Descubre productores locales, compara precios y apoya la producción agropecuaria sostenible.</p>
+  <button class="btn">Buscar Productos</button>
+
+  <!-- 🔥 SLIDER DE CONSUMIDORES -->
+  <div class="slider-container">
+    <h3>Opciones del Consumidor</h3>
+
+    <div class="slider">
+      <div class="slide">
+        <h4>Explorar Productos</h4>
+        <p>Busca por categoría o zona.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Comparar Precios</h4>
+        <p>Encuentra las mejores ofertas.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Favoritos</h4>
+        <p>Guarda productores confiables.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Historial</h4>
+        <p>Revisa compras anteriores.</p>
+      </div>
+
+      <div class="slide">
+        <h4>Subir Imagen</h4>
+        <p>Buscar un producto mediante foto.</p>
+        <input type="file" accept="image/*">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="sobre">
+  <h2>Sobre AgroPath</h2>
+  <p>Somos una plataforma comprometida con el fortalecimiento del sector agropecuario. No realizamos transporte ni intermediación directa: ofrecemos visibilidad, conexión y confianza entre productor y consumidor.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea rows="4" placeholder="Tu mensaje"></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 AgroPath | Plataforma de conexión agropecuaria
+</footer>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Gracias por contactarnos. Te responderemos pronto.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
